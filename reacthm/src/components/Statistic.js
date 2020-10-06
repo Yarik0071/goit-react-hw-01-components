@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from 'prop-types';
 
 function Statistic( { title, stats } ) {   
   return (
@@ -18,6 +19,11 @@ function Statistic( { title, stats } ) {
      } 
   </ul> 
   </section>)   
+}
+
+Statistic.propTypes = {
+  title: PropTypes.string.isRequired,
+  stats: PropTypes.arrayOf(PropTypes.object),
 }
 
 export default Statistic

@@ -37,6 +37,7 @@ Profile.propTypes = {
   avatar: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired, 
+  stats: PropTypes.objectOf(PropTypes.number)
 }
 
 export default Profile

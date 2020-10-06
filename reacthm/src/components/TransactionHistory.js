@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 
 function TransactionHistory ( { items } ) {
     return (
@@ -24,6 +25,10 @@ function TransactionHistory ( { items } ) {
   </tbody>
 </table>
     )
+}
+
+TransactionHistory.propTypes = {
+  items: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.string.isRequired))
 }
 
 export default TransactionHistory 

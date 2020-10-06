@@ -1,5 +1,5 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 function FriendList( {friends} ) {
     return (
@@ -25,5 +25,9 @@ friends.map(friend => (
     )
 }
 
+
+FriendList.propTypes = {
+    friends: PropTypes.arrayOf(PropTypes.object)
+  }
 
 export default FriendList
